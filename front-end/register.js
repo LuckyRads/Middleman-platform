@@ -1,6 +1,4 @@
 function register(email, password, repeatedPassword) {
-    emailPreference = getEmailPreference();
-
     if (!doPasswordsMatch(password, repeatedPassword)) {
         return 'Passwords do not match!'
     }
@@ -11,16 +9,6 @@ function register(email, password, repeatedPassword) {
 
     // send login request to server
     return `Registered user: ${email} successfully`;
-}
-
-function getEmailPreference() {
-    try {
-        var preferenceSelect = document.getElementById('email-preference');
-        var emailPreference = preferenceSelect.options[preferenceSelect.selectedIndex].value;
-        return emailPreference
-    } catch (e) {
-        return 'All-emails';
-    }
 }
 
 function isPasswordValid(password) {
