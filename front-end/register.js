@@ -1,7 +1,7 @@
-function register(email, password) {
+function register(email, password, repeatedPassword) {
     // send login request to server
     emailPreference = getEmailPreference();
-    console.log(email, password, emailPreference);
+    console.log(email, password, repeatedPassword, emailPreference);
 }
 
 function getEmailPreference() {

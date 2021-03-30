@@ -15,6 +15,12 @@
         name="registration-password"
         type="password"
       />
+      <label for="registration-password-2">Repeat password: </label>
+      <input
+        id="registration-password-2"
+        name="registration-password-2"
+        type="password"
+      />
     </div>
     <div>
       <label for="email-preference">Email preference:</label>
@@ -24,7 +30,7 @@
       </select>
     </div>
     <button
-      onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value)"
+      onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value, document.getElementById('registration-password-2').value)"
     >
       Register
     </button>
