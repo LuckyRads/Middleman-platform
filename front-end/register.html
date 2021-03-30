@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <body>
   <form>
-    <label for="email-field">Email: </label>
-    <input id="registration-email" name="email-field" type="email" />
-    <label for="password-field">Password: </label>
-    <input id="registration-password" name="password-field" type="password" />
+      <div>
+        <label for="email-field">Email: </label>
+        <input id="registration-email" name="email-field" type="email" />
+      </div>
+      <div>
+        <label for="password-field">Password: </label>
+        <input id="registration-password" name="password-field" type="password" />
+      </div>
     <button
       onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value)"
     >
