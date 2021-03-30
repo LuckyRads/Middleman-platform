@@ -14,9 +14,13 @@ function register(email, password, repeatedPassword) {
 }
 
 function getEmailPreference() {
-    var preferenceSelect = document.getElementById('email-preference');
-    var emailPreference = preferenceSelect.options[preferenceSelect.selectedIndex].value;
-    return emailPreference
+    try {
+        var preferenceSelect = document.getElementById('email-preference');
+        var emailPreference = preferenceSelect.options[preferenceSelect.selectedIndex].value;
+        return emailPreference
+    } catch (e) {
+        return 'All-emails';
+    }
 }
 
 function isPasswordValid(password) {
