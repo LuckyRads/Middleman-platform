@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <body>
-  <label for="email-field">Email: </label>
-  <input name="email-field" type="email" />
-  <label for="password-field">Password: </label>
-  <input name="password-field" type="password" />
-  <button onclick="register()">Register</button>
+  <form>
+    <label for="email-field">Email: </label>
+    <input id="registration-email" name="email-field" type="email" />
+    <label for="password-field">Password: </label>
+    <input id="registration-password" name="password-field" type="password" />
+    <button
+      onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value)"
+    >
+      Register
+    </button>
+  </form>
 </body>
 
 <script src="register.js"></script>
