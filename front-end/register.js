@@ -9,3 +9,13 @@ function getEmailPreference() {
     var emailPreference = preferenceSelect.options[preferenceSelect.selectedIndex].value;
     return emailPreference
 }
+
+function doPasswordsMatch(password, repeatedPassword) {
+    return password === repeatedPassword;
+}
+
+module.exports = {
+    register,
+    getEmailPreference,
+    doPasswordsMatch
+};
