@@ -1,17 +1,33 @@
+const items = {
+}
+const deletedItems = {}
+
 function itemDelete(element){
-    let a = document.getElementsByClassName(element)[0];
 
-    if(a === undefined){
-        return "Item doesn't exist";
-    }
-    let status = a.childNodes[3];
-
-    if(status.innerHTML === "Status: Deleted"){
+    if(deletedItems.id === element){
         return "Item is already deleted";
     }
 
-    status.innerHTML = "Status: Deleted";
+    if(items.id !== element){
+        return "Item doesn't exist";
+    }
+
+    deletedItems.id = element;
+    delete items.id;
 
     return "Item deleted";
 }
 
+function addElement(){
+    items.id =1234;
+}
+
+function clearDeleted(){
+    delete deletedItems.id;
+}
+
+module.exports = {
+    itemDelete,
+    addElement,
+    clearDeleted
+}
