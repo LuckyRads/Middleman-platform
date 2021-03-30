@@ -3,11 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item deletion</title>
+    <link rel="stylesheet" href="deletion-style.css">
 </head>
 <body>
     <label for="itemID">Item ID:</label>
-    <input type="itemID" name="item">
-    <button onclick = "itemDelete()">Delete</button>
+    <input id="input-id" type="text">
+    <button onclick = "itemDelete(document.getElementById('input-id').value)">Delete</button>
+
+    <div class = "abc1">
+        <p id > Item: abc1</p>
+        <p id = "abc11" > Status: Available</p>
+        <button onclick = "itemDelete('abc1')" >Delete</button>
+    </div>
+
+
     <script src="deletion.js"></script>
 </body>
 </html>
