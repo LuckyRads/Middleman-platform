@@ -1,14 +1,28 @@
 <!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+</head>
 <body>
   <form>
-      <div>
-        <label for="email-field">Email: </label>
-        <input id="registration-email" name="email-field" type="email" />
-      </div>
-      <div>
-        <label for="password-field">Password: </label>
-        <input id="registration-password" name="password-field" type="password" />
-      </div>
+    <div>
+      <label for="registration-email">Email: </label>
+      <input id="registration-email" name="registration-email" type="email" />
+    </div>
+    <div>
+      <label for="registration-password">Password: </label>
+      <input
+        id="registration-password"
+        name="registration-password"
+        type="password"
+      />
+    </div>
+    <div>
+      <label for="email-preference">Email preference:</label>
+      <select id="email-preference" name="email-preference">
+        <option value="all-emails">All emails</option>
+        <option value="no-emails">No emails</option>
+      </select>
+    </div>
     <button
       onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value)"
     >
