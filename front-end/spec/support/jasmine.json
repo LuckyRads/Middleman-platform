@@ -5,6 +5,7 @@
   ],
   "helpers": [
     "helpers/**/*.js",
+    "../..deletion.js",
     "../../register.js"
   ],
   "stopSpecOnExpectationFailure": false,
