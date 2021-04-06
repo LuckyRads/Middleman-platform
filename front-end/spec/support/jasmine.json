@@ -6,7 +6,8 @@
   "helpers": [
     "helpers/**/*.js",
     "../..deletion.js",
-    "../../register.js"
+    "../../register.js",
+    "../../approval.js"
   ],
   "stopSpecOnExpectationFailure": false,
   "random": true

@@ -2,11 +2,11 @@
   "name": "front-end",
   "version": "1.0.0",
   "description": "",
-  "main": "deletion.js",
+  "main": "approval.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "aivaras",
+  "author": "jegor",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^3.7.0"
