@@ -15,6 +15,22 @@ function approve(element){
     return "Transaction approved";
 }
 
+function loadTransactions(){
+    let i = 0;
+
+    while (i < 6) {
+        transactions.push(10000 + 1)
+
+        i++;
+    }
+}
+
+function clearApproved(){
+    approvedTransactions = [];
+}
+
 module.exports = {
     approve,
+    loadTransactions,
+    clearApproved
 }
