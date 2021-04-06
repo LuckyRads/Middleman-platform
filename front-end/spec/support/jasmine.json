@@ -4,7 +4,10 @@
     "**/*[sS]pec.js"
   ],
   "helpers": [
-    "helpers/**/*.js"
+    "helpers/**/*.js",
+    "../..deletion.js",
+    "../../register.js",
+    "../../approval.js"
   ],
   "stopSpecOnExpectationFailure": false,
   "random": true
