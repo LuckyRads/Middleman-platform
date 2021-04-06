@@ -17,7 +17,7 @@ describe('Registration', () => {
         expect(register.register('useris@mail.com', '#PasswordaS123456', '#PasswordaS123456')).toBe('Registered user: useris@mail.com successfully');
     })
     it('complete regisration', () => {
-        expect(register.register('useris@mail.com', 'asd', 'asds')).toBe('Passwords do not match!');
+        expect(register.register('useris@mail.com', 'asdasdasd', 'asdasdasds')).toBe('Passwords do not match!');
     })
     it('complete regisration', () => {
         expect(register.register('useris@mail.com', 'asd', 'asd')).toBe('Password is too short!');
