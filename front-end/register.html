@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <form>
+    <div>
+      <label for="registration-email">Email: </label>
+      <input id="registration-email" name="registration-email" type="email" />
+    </div>
+    <div>
+      <label for="registration-password">Password: </label>
+      <input
+        id="registration-password"
+        name="registration-password"
+        type="password"
+      />
+      <label for="registration-password-2">Repeat password: </label>
+      <input
+        id="registration-password-2"
+        name="registration-password-2"
+        type="password"
+      />
+    </div>
+    <button
+      onclick="register(document.getElementById('registration-email').value, document.getElementById('registration-password').value, document.getElementById('registration-password-2').value)"
+    >
+      Register
+    </button>
+  </form>
+</body>
+
+<script src="register.js"></script>
