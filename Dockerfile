@@ -1,4 +1,4 @@
 FROM alpine:3.10
-ADD *.js /app
-ADD *.html /app
+COPY . /app
+WORKDIR /app
 RUN npm build
