@@ -13,6 +13,9 @@ describe('Registration', () => {
     it('password validation', () => {
         expect(register.isPasswordValid('trumpas')).toBe('Password is too short!');
     })
+    it('password validation', () => {
+        expect(register.isPasswordValid('trumpas1')).toBe('valid');
+    })
     it('complete regisration', () => {
         expect(register.register('useris@mail.com', '#PasswordaS123456', '#PasswordaS123456')).toBe('Registered user: useris@mail.com successfully');
     })
